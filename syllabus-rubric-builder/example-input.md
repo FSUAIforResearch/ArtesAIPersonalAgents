@@ -1,13 +1,18 @@
 # Example Input: Syllabus & Rubric Builder
 
-Copy and paste the text below into your ArtesAI agent chat to test it (attach both companion skills first):
+Copy and paste the text below into your ArtesAI agent chat to test it (attach the companion skills first):
 
 ```text
-Here are my rough notes for a new undergrad course. Build the syllabus, then run /rubric for the final project report and /schedule.
+Here are my rough notes for a new undergrad course at FSU. Build the Simple Syllabus draft, then run /objectives to upgrade my rough goals into a Bloom's alignment matrix, /ai-policy (Option B: Conditional & Cited Use with FSU ArtesAI), /rubric for the final project report, and /schedule.
 
 Course: Intro to Data Analysis for the Social Sciences, 3 credits, MWF 10:10-11:00
 Audience: sophomores and juniors, no stats background assumed
 Tools: free, students use R through RStudio (Posit Cloud), no textbook purchase, I post open readings on Canvas
+
+Rough goals I have in mind:
+- Students will understand how to ask good social science questions with data and variables.
+- Students will learn how to run confidence intervals, hypothesis tests, and regressions in R.
+- Students will appreciate ethical and privacy issues when communicating statistical results to non-experts.
 
 Topics in order:
 - why data, asking good questions
