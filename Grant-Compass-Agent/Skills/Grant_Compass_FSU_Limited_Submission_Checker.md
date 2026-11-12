@@ -1,4 +1,13 @@
+---
+name: fsu-limited-submission-checker
+description: Check sponsor application limits and FSU limited-submission processes. Use for /check-limited or institutional, nomination, or investigator-limit questions; distinguish limits, verify current FSU guidance, and refer unresolved selection issues.
+---
+
 # FSU Limited Submission Checker
+
+## When to Apply This Skill
+
+Apply when the user types `/check-limited`, asks about application limits, or another workflow identifies a possible limit. Follow the workflow below and end with three prioritized next actions.
 
 ## Objective
 

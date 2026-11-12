@@ -1,4 +1,13 @@
+---
+name: funding-opportunity-verifier
+description: Verify one funding solicitation for FSU researchers. Use for /verify-opportunity or requests to analyze deadlines, eligibility, application limits, funding, required documents, review criteria, and unresolved requirements using official sources.
+---
+
 # Funding Opportunity Verifier
+
+## When to Apply This Skill
+
+Apply when the user types `/verify-opportunity` or asks to analyze a specific solicitation, URL, or opportunity number. Follow the workflow below and end with three prioritized next actions.
 
 ## Objective
 

@@ -1,4 +1,13 @@
+---
+name: fsu-proposal-planner
+description: Build an FSU-aware checklist and timeline from a verified opportunity. Use for /plan-proposal or milestone, routing, and internal-date requests; separate sponsor and FSU requirements from recommendations and show roles, dependencies, and unresolved dates.
+---
+
 # FSU Proposal Planner
+
+## When to Apply This Skill
+
+Apply when the user types `/plan-proposal` or asks for a proposal checklist, timeline, routing plan, or next steps. Follow the workflow below and end with three prioritized next actions.
 
 ## Objective
 

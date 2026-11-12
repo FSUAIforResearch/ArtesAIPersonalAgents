@@ -1,9 +1,13 @@
 ---
 name: funding-opportunity-finder
-description: finds current grant and research funding opportunities for Florida State University faculty and research staff. Use when a user asks to find grants, funding, fellowships, training awards, equipment support, internal funding, or sponsor programs that may match a research concept. Searches approved APIs and websites, verifies candidates against official sponsor sources, screens obvious mismatches and submission blockers, checks possible FSU limited-submission implications, and returns a concise evidence-based shortlist. Do not use for full proposal drafting or final eligibility, budget, compliance, or submission decisions.
+description: Find and verify current funding opportunities for FSU research concepts. Use for /find-funding or requests for grants, fellowships, equipment, training, or internal funding; return a sourced shortlist with apparent fit and blockers.
 ---
 
 # Funding Opportunity Finder
+
+## When to Apply This Skill
+
+Apply when the user types `/find-funding` or asks to find funding for a research concept. Follow the workflow below and end with three prioritized next actions.
 
 ## Objective
 

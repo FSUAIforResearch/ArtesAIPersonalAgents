@@ -17,6 +17,7 @@ Each folder in this repository contains everything you need to build a specializ
 
 | Agent | Focus Area | Included Skills | Difficulty |
 | :--- | :--- | :--- | :--- |
+| [**Grant Compass**](./Grant-Compass-Agent/README.md) | Research Funding & Proposal Planning | • `funding-opportunity-finder`<br>• `funding-opportunity-verifier`<br>• `research-opportunity-matcher`<br>• `fsu-limited-submission-checker`<br>• `fsu-proposal-planner`<br>• `sponsor-aligned-proposal-outliner` | Intermediate |
 | [**Abstract Synthesizer**](./abstract-synthesizer/README.md) | Academic & Research | • `methodology-matrix-extractor`<br>• `research-gap-identifier` | Beginner |
 | [**Scientific Figure Recreator**](./scientific-figure-recreator/README.md) | Data Visualization & Plotting | • `figure-recreator-python`<br>• `figure-recreator-r`<br>• `figure-recreator-stata`<br>• `figure-recreator-matlab` | Beginner / Intermediate |
 | [**Syllabus & Rubric Builder**](./syllabus-rubric-builder/README.md) | Teaching & Course Design | • `blooms-learning-objectives-generator`<br>• `course-ai-policy-drafter`<br>• `assignment-rubric-builder`<br>• `course-schedule-builder` | Beginner |

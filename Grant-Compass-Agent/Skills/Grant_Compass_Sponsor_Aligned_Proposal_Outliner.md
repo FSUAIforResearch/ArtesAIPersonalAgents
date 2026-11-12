@@ -1,4 +1,13 @@
+---
+name: sponsor-aligned-proposal-outliner
+description: Create a sponsor-aligned outline from a verified opportunity. Use for /outline-proposal or writing-plan requests; preserve required sections and limits, map review criteria, list attachments, and use placeholders for missing project evidence.
+---
+
 # Sponsor-Aligned Proposal Outliner
+
+## When to Apply This Skill
+
+Apply when the user types `/outline-proposal` or asks for a proposal outline, section prompts, page allocation, or review-criteria crosswalk. Follow the workflow below and end with three prioritized next actions.
 
 ## Objective
 

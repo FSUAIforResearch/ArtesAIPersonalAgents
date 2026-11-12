@@ -1,4 +1,13 @@
+---
+name: research-opportunity-matcher
+description: Compare a research concept with a verified funding opportunity. Use for /match-opportunity or project-fit questions; assess qualitative alignment, eligibility concerns, mechanism fit, review criteria, and blockers without predicting funding success.
+---
+
 # Research Opportunity Matcher
+
+## When to Apply This Skill
+
+Apply when the user types `/match-opportunity` or asks whether a project fits a specific opportunity. Follow the workflow below and end with three prioritized next actions.
 
 ## Objective
 
