@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{listings}
+
+\title{Comparing Two Document Conversion Workflows}
+% TODO: Add author name and institutional affiliation.
+\author{}
+% TODO: Add the report date if required.
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Status:} Fictional demonstration report; not real research findings.
+
+\section{Objective}
+Compare the time required to prepare editable LaTeX drafts from Markdown
+notes using Workflow A and Workflow B.
+
+\section{Methods}
+Each workflow was applied to the same 6 fictional Markdown reports. Each
+report contained one table and one equation. Each workflow was run once
+per report. Preparation time included manual correction of the generated
+LaTeX. Hardware and software versions were not recorded.
+% TODO: Add hardware and software details if available.
+
+\section{Results}
+Table~\ref{tab:workflow-results} presents the values supplied by the report
+author.
+
+\begin{table}[htbp]
+\centering
+\caption{Reported results for the fictional document conversion demonstration.}
+\label{tab:workflow-results}
+\begin{tabular}{lrrr}
+\toprule
+Workflow & Reports & Mean preparation & Reports requiring \\
+         & processed & time (min) & manual correction \\
+\midrule
+A & 6 & 18.5 & 4 \\
+B & 6 & 12.0 & 2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Reported Equation}
+Mean preparation time was defined as
+\begin{equation}
+\bar{t} = \frac{1}{n}\sum_{i=1}^{n} t_i
+\label{eq:mean-time}
+\end{equation}
+where \(t_i\) is preparation time for report \(i\), measured in minutes,
+and \(n\) is the number of reports.
+
+\subsection{Code Excerpt}
+This Python excerpt labels the two workflows; it does not perform analysis.
+\begin{lstlisting}[language=Python,breaklines=true,basicstyle=\ttfamily\small]
+workflow_labels = ["A", "B"]
+print("Workflow labels:", workflow_labels)
+\end{lstlisting}
+
+\section{Discussion}
+Workflow B had a lower reported mean preparation time in this demonstration.
+No significance tests, confidence intervals, or effect sizes were computed.
+These observations do not establish a general performance advantage.
+
+% TODO: Supply a source for the following background statement.
+Structured authoring workflows can support reproducible document preparation.
+\textbf{[Citation needed; no source supplied.]}
+
+\section{Limitations}
+Only 6 fictional reports were included. Each workflow was run once per
+report. Hardware and software versions were not recorded. Manual
+corrections were included in preparation time but were not categorized
+by error type.
+
+\section{Missing Materials}
+Author name and affiliation were not supplied. A workflow diagram was
+mentioned in the planning notes, but no figure file was supplied. No
+bibliography was supplied.
+% TODO: Add the workflow diagram only when a figure file is supplied.
+% TODO: Add references only when bibliographic information is supplied.
+
+\end{document}
