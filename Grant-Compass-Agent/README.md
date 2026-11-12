@@ -78,6 +78,8 @@ Use this short prompt for the example build. The existing [`grant_compass_agent_
 
 #### 3. Knowledge & Tools
 
+For a template-style explanation of **what knowledge Grant Compass uses and why**, see the [Knowledge example and compact upload pack](../Knowledge/README.md). Use that compact pack or the detailed set below as your baseline; for live retrieval, retain the detailed source registry so source-specific permissions and limits are available. Avoid uploading two versions of the same filename together.
+
 Upload these four core knowledge packets, preserving their filenames so the skills can refer to them:
 
 | File | Purpose |
