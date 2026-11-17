@@ -1,9 +1,8 @@
-# Example Input
+# Example Input: FSU Accessibility Reviewer
 
-Paste the prompt below into the Preview chat with all three skills attached. It includes a short syllabus excerpt as pasted text, so you can test without a file. To test with a real file, attach a Word doc or PDF with Add Files & Images and use the same first sentence.
+Copy and paste the prompt below into the Preview chat with all three skills attached (`accessibility-standards`, `document-review`, and `media-web-social`). It includes a short syllabus excerpt as pasted text so you can test without uploading a file. *(To test with a real file, attach a Word doc or PDF with **Add Files & Images** and use the first sentence.)*
 
----
-
+```text
 Please review this syllabus page for accessibility before I post it in Canvas. It was written in Word, and I plan to upload it as a PDF made with Print to PDF. The headings below are just bold text in Word. The schedule table has no header row set. The pasted text is below.
 
 ---
@@ -31,3 +30,4 @@ See the chart on the right for how your grade is calculated.
 
 Accessibility Statement
 Students needing accommodations should register with the Office of Accessibility Services.
+```
