@@ -11,7 +11,7 @@ Each folder in this repository contains everything you need to build a specializ
 
 > **New to System Prompts & Skills?** Read our quick guide: [**System Prompts vs. Skills: What's the Difference? (`docs/system-prompts-vs-skills.md`)**](./docs/system-prompts-vs-skills.md) to learn how they work together and when to put instructions in a System Prompt vs. a reusable Skill.
 
-> **What goes in an agent's knowledge?** Explore the [Grant Compass Knowledge example](./knowledge/README.md) for upload-ready reference packets, what each contains, why the agent uses it, and how to add it in ArtesAI.
+> **What goes in an agent's knowledge?** Explore the [Grant Compass Knowledge Pack (`grant-compass-agent/knowledge/`)](./grant-compass-agent/knowledge/README.md) for upload-ready reference packets, what each contains, why the agent uses it, and how to add it in ArtesAI.
 
 ---
 

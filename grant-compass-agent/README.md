@@ -70,10 +70,14 @@ In the **Name & Identity** panel, fill in the three fields below (you'll see the
   • sponsor-aligned-proposal-outliner (/outline-proposal) — Create a section-by-section outline mapped to review criteria
   ```
 
-#### 3. Knowledge & Tools *(Optional)*
-All five skills include built-in matching, template, and FSU routing rules so **Grant Compass works immediately without uploading any knowledge files**.
+#### 3. Knowledge & Tools *(Upload from `./knowledge/`)*
+To give **Grant Compass** the full FSU Office of Research routing directory, qualitative match rubric, standard output templates, and official sponsor registry, upload the four ready-to-use Markdown files from [`./knowledge/`](./knowledge/README.md) into **Step 3 — Knowledge & Tools** (preserve their filenames):
+- [`knowledge/01_fsu_routing.md`](./knowledge/01_fsu_routing.md) — FSU Office of Research routing matrix (SRA, FSURF, Research Development, Limited Submissions, RAMP, IRB, ACUC, RISE) and internal-deadline rules
+- [`knowledge/02_match_rubric.md`](./knowledge/02_match_rubric.md) — 6-dimension qualitative fit rubric (`Strong apparent fit`, `Possible fit`, `Weak apparent fit`, `Provisional`) and `Pursue` / `Investigate Further` / `Monitor` / `Do Not Pursue` decision criteria
+- [`knowledge/03_output_templates.md`](./knowledge/03_output_templates.md) — Standard response layouts and table structures for all five skills
+- [`knowledge/04_source_registry.md`](./knowledge/04_source_registry.md) — Directory of official FSU research pages and federal/agency grant portals (`Grants.gov`, `NIH`, `NSF`, `NEH`, `USDA`, `DOE`, `NASA`, `HRSA`)
 
-If you want to customize institutional routing, output templates, or approved website registries across your team, see the [**Grant Compass Knowledge Guide (`../knowledge/README.md`)**](../knowledge/README.md) and optionally upload the four reference packets ([`01_fsu_routing.md`](../knowledge/01_fsu_routing.md), [`02_match_rubric.md`](../knowledge/02_match_rubric.md), [`03_output_templates.md`](../knowledge/03_output_templates.md), [`04_source_registry.md`](../knowledge/04_source_registry.md)). Faculty can also upload specific grant solicitation PDFs directly inside a chat session.
+*(Note: All five skills also include built-in fallback rules so the agent still functions if you test it before uploading the knowledge pack. See [`knowledge/README.md`](./knowledge/README.md) for details.)*
 
 #### 4. Capabilities & Model
 In the **Capabilities & Model** tab, configure the toggles and model as follows:
@@ -117,6 +121,7 @@ In **5. Starter Prompts**, click **Add Starter Prompt** and enter the **Title** 
 | [`skills/sponsor-aligned-proposal-outliner.md`](./skills/sponsor-aligned-proposal-outliner.md) | Skill (`/outline-proposal`) for sponsor-aligned outlines and review-criteria crosswalks |
 | [`example-input.md`](./example-input.md) | Self-contained *HeatReady Florida* solicitation test prompt + quick discovery test prompt |
 | [`example-output.md`](./example-output.md) | Worked Opportunity Brief, Limited-Submission Check, Fit Assessment, Checklist/Timeline, and Outline |
+| [`knowledge/`](./knowledge/README.md) | Four upload-ready ArtesAI knowledge files (`01_fsu_routing.md`–`04_source_registry.md`) for Step 3 (`Knowledge & Tools`) |
 
 ---
 
@@ -129,4 +134,4 @@ In **5. Starter Prompts**, click **Add Starter Prompt** and enter the **Title** 
 3. **Test a Limited-Submission Blocker (`/verify-opportunity`)**:
    - *Try this*: Paste a foundation solicitation with a *"one application per university"* cap and note that no FSU listing was found. Watch how the Verifier flags the institutional limit first and directs you to **FSU Research Development** (`limitedsubmissions@fsu.edu`).
 4. **Customize Departmental Routing via Knowledge Files**:
-   - *Try this*: Upload the optional packets from [`../knowledge/`](../knowledge/README.md) or your college's internal pre-award review checklist in **Step 3 (Knowledge & Tools)** and ask `/plan-proposal` to include your college's internal review milestone alongside the sponsor requirements.
+   - *Try this*: Edit [`knowledge/01_fsu_routing.md`](./knowledge/01_fsu_routing.md) or upload your college's internal pre-award review checklist in **Step 3 (Knowledge & Tools)** and ask `/plan-proposal` to include your college's internal review milestone alongside the sponsor requirements.
