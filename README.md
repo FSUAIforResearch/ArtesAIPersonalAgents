@@ -25,6 +25,9 @@ Each folder in this repository contains everything you need to build a specializ
 | [**Abstract Synthesizer**](./abstract-synthesizer/README.md) | Academic & Research | • `methodology-matrix-extractor`<br>• `research-gap-identifier` | Beginner |
 | [**Scientific Figure Recreator**](./scientific-figure-recreator/README.md) | Data Visualization & Plotting | • `figure-recreator-python`<br>• `figure-recreator-r`<br>• `figure-recreator-stata`<br>• `figure-recreator-matlab` | Beginner / Intermediate |
 | [**Syllabus & Rubric Builder**](./syllabus-rubric-builder/README.md) | Teaching & Course Design | • `blooms-learning-objectives-generator`<br>• `course-ai-policy-drafter`<br>• `assignment-rubric-builder`<br>• `course-schedule-builder` | Beginner |
+| [**Research Paper Matchmaker**](./research-paper-matchmaker/README.md) | Academic & Research | • `project-paper-matcher`<br>• `project-paper-finder` | Beginner |
+| [**FSU Accessibility Reviewer**](./accessibility-reviewer/README.md) | Accessibility & Compliance | • `accessibility-standards`<br>• `document-review`<br>• `media-web-social` | Beginner |
+| [**Research-to-LaTeX Agent**](./research-to-latex/README.md) | Research Writing & LaTeX | • `markdown-to-latex-converter`<br>• `latex-template-drafter`<br>• `latex-draft-reviewer` | Beginner / Intermediate |
 
 ---
 
