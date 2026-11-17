@@ -1,7 +1,7 @@
 ---
 title: Grant Compass Compact FSU Routing Knowledge
 purpose: Supply institutional routing context and referral boundaries.
-source_basis: Grant-Compass-Agent/Knowledge files/01_fsu_routing.md
+source_basis: knowledge/01_fsu_routing.md
 status: Adapted reference guidance; current institutional requirements must be verified.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Grant Compass Compact Source and Evidence Guide
 purpose: Explain source authority and defer live retrieval permissions to the detailed registry.
-source_basis: Grant-Compass-Agent/Knowledge files/04_source_registry.md
+source_basis: knowledge/04_source_registry.md
 status: Compact reference only; no independent live-source approvals.
 ---
 
@@ -9,13 +9,7 @@ status: Compact reference only; no independent live-source approvals.
 
 ## Why Grant Compass Uses This Knowledge
 
-Funding status and institutional requirements change. This reference helps all six skills distinguish discovery leads, controlling requirements, researcher facts, and recommendations. It prevents static knowledge from being treated as evidence of a current deadline or approval.
-
-## Active Source Configuration
-
-The detailed **Grant Compass Approved Source Registry**, maintained at `Grant-Compass-Agent/Knowledge files/04_source_registry.md` in this repository, holds source-specific URLs, statuses, page limits, testing notes, and ownership. This compact file does not replicate that changing approval record.
-
-For live work, use the detailed registry as the active uploaded file in place of this compact guide. If the detailed registry is unavailable, do not assume its source permissions or page limits. Continue with supplied documents, label current status unresolved, and request the active configuration when live retrieval is needed.
+Funding status and institutional requirements change. This reference helps all five skills distinguish discovery leads, controlling requirements, researcher facts, and recommendations. It prevents static knowledge from being treated as evidence of a current deadline or approval.
 
 ## Source Roles in the Existing Design
 

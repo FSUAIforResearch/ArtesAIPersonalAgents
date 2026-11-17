@@ -26,11 +26,11 @@ In ArtesAI, **create the companion Skills first** under your account **Settings 
 1. Click your **Profile / Account box** at the bottom-left of the maroon FSU sidebar and click **Settings**.
 2. Click **My Skills** on the left, then click **`+ New Skill`** in the top-right corner.
 3. Open each standard skill file below and copy its parts into the **Create Skill** modal (**Name** = `name:` from the top `---` block, **Description** = `description:` from the top `---` block, leave **Always On** unchecked/`Ad Hoc`, and paste only the Markdown body below the second `---` into the dark editor box):
-   - **[`funding-opportunity-finder`](./Skills/Grant_Compass_Funding_Opportunity_Finder.md)** (`/find-funding`): Turns a short, non-confidential research description and funding need into a verified shortlist of 3–7 current grant opportunities with fit classifications and blockers.
-   - **[`funding-opportunity-verifier`](./Skills/Grant_Compass_Funding_Opportunity_Verifier.md)** (`/verify-opportunity` / `/check-limited`): Extracts deadlines (with time zones), eligibility, award limits, required components, and review criteria from an official solicitation, and runs an **FSU Limited-Submission Check** (separating institutional vs. PI limits).
-   - **[`research-opportunity-matcher`](./Skills/Grant_Compass_Research_Opportunity_Matcher.md)** (`/match-opportunity`): Compares a non-confidential project concept against a solicitation using qualitative fit categories (`Strong apparent fit`, `Possible fit`, `Weak apparent fit`, `Provisional`), separating framing opportunities from substantive gaps and ending with a `Pursue` / `Investigate Further` / `Monitor` / `Do Not Pursue` decision.
-   - **[`fsu-proposal-planner`](./Skills/Grant_Compass_FSU_Proposal_Planner.md)** (`/plan-proposal`): Builds a 3-tier proposal checklist (`Sponsor Required`, `FSU Required`, `Recommended Practice`) and a backward-planned milestone timeline with roles, dependencies, and FSU internal-date guardrails.
-   - **[`sponsor-aligned-proposal-outliner`](./Skills/Grant_Compass_Sponsor_Aligned_Proposal_Outliner.md)** (`/outline-proposal`): Creates an editable, section-by-section proposal outline preserving mandatory sponsor headings and page limits, paired with `[PLACEHOLDER]` prompts for missing evidence and a **Review-Criteria Crosswalk** table.
+   - **[`funding-opportunity-finder`](./skills/funding-opportunity-finder.md)** (`/find-funding`): Turns a short, non-confidential research description and funding need into a verified shortlist of 3–7 current grant opportunities with fit classifications and blockers.
+   - **[`funding-opportunity-verifier`](./skills/funding-opportunity-verifier.md)** (`/verify-opportunity` / `/check-limited`): Extracts deadlines (with time zones), eligibility, award limits, required components, and review criteria from an official solicitation, and runs an **FSU Limited-Submission Check** (separating institutional vs. PI limits).
+   - **[`research-opportunity-matcher`](./skills/research-opportunity-matcher.md)** (`/match-opportunity`): Compares a non-confidential project concept against a solicitation using qualitative fit categories (`Strong apparent fit`, `Possible fit`, `Weak apparent fit`, `Provisional`), separating framing opportunities from substantive gaps and ending with a `Pursue` / `Investigate Further` / `Monitor` / `Do Not Pursue` decision.
+   - **[`fsu-proposal-planner`](./skills/fsu-proposal-planner.md)** (`/plan-proposal`): Builds a 3-tier proposal checklist (`Sponsor Required`, `FSU Required`, `Recommended Practice`) and a backward-planned milestone timeline with roles, dependencies, and FSU internal-date guardrails.
+   - **[`sponsor-aligned-proposal-outliner`](./skills/sponsor-aligned-proposal-outliner.md)** (`/outline-proposal`): Creates an editable, section-by-section proposal outline preserving mandatory sponsor headings and page limits, paired with `[PLACEHOLDER]` prompts for missing evidence and a **Review-Criteria Crosswalk** table.
 
 ---
 
@@ -43,7 +43,7 @@ In ArtesAI, **create the companion Skills first** under your account **Settings 
 
 #### 1. Instructions (System Prompt)
 1. Open [`system-prompt.md`](./system-prompt.md), copy the text, and paste it into the **Specific Instructions** field.
-2. **Remove the Platform Instructions**: Delete/clear the default pre-filled **Platform Instructions** to save on context tokens. *(Note: [`grant_compass_agent_instructions_updated.md`](./grant_compass_agent_instructions_updated.md) is kept in this folder as an extended design reference—only paste `system-prompt.md` into ArtesAI).*
+2. **Remove the Platform Instructions**: Delete/clear the default pre-filled **Platform Instructions** to save on context tokens.
 
 #### 2. Name & Identity
 In the **Name & Identity** panel, fill in the three fields below (you'll see them update live in the right-hand **Preview** pane):
@@ -73,7 +73,7 @@ In the **Name & Identity** panel, fill in the three fields below (you'll see the
 #### 3. Knowledge & Tools *(Optional)*
 All five skills include built-in matching, template, and FSU routing rules so **Grant Compass works immediately without uploading any knowledge files**.
 
-If you want to customize institutional routing, output templates, or approved website registries across your team, see the [**Grant Compass Knowledge Guide (`../Knowledge/README.md`)**](../Knowledge/README.md) and optionally upload the four reference packets (`01_fsu_routing.md`, `02_match_rubric.md`, `03_output_templates.md`, `04_source_registry.md`). Faculty can also upload specific grant solicitation PDFs directly inside a chat session.
+If you want to customize institutional routing, output templates, or approved website registries across your team, see the [**Grant Compass Knowledge Guide (`../knowledge/README.md`)**](../knowledge/README.md) and optionally upload the four reference packets ([`01_fsu_routing.md`](../knowledge/01_fsu_routing.md), [`02_match_rubric.md`](../knowledge/02_match_rubric.md), [`03_output_templates.md`](../knowledge/03_output_templates.md), [`04_source_registry.md`](../knowledge/04_source_registry.md)). Faculty can also upload specific grant solicitation PDFs directly inside a chat session.
 
 #### 4. Capabilities & Model
 In the **Capabilities & Model** tab, configure the toggles and model as follows:
@@ -110,14 +110,13 @@ In **5. Starter Prompts**, click **Add Starter Prompt** and enter the **Title** 
 | File / Folder | Purpose |
 | :--- | :--- |
 | [`system-prompt.md`](./system-prompt.md) | Copy-pasteable role, workflow, and anti-hallucination / data-minimization guardrails |
-| [`Skills/Grant_Compass_Funding_Opportunity_Finder.md`](./Skills/Grant_Compass_Funding_Opportunity_Finder.md) | Skill (`/find-funding`) for low-friction intake and verified funding discovery |
-| [`Skills/Grant_Compass_Funding_Opportunity_Verifier.md`](./Skills/Grant_Compass_Funding_Opportunity_Verifier.md) | Skill (`/verify-opportunity` / `/check-limited`) for solicitation analysis and FSU limited-submission checking |
-| [`Skills/Grant_Compass_Research_Opportunity_Matcher.md`](./Skills/Grant_Compass_Research_Opportunity_Matcher.md) | Skill (`/match-opportunity`) for qualitative project-to-grant fit evaluation |
-| [`Skills/Grant_Compass_FSU_Proposal_Planner.md`](./Skills/Grant_Compass_FSU_Proposal_Planner.md) | Skill (`/plan-proposal`) for 3-tier proposal checklists and backward-planned timelines |
-| [`Skills/Grant_Compass_Sponsor_Aligned_Proposal_Outliner.md`](./Skills/Grant_Compass_Sponsor_Aligned_Proposal_Outliner.md) | Skill (`/outline-proposal`) for sponsor-aligned outlines and review-criteria crosswalks |
+| [`skills/funding-opportunity-finder.md`](./skills/funding-opportunity-finder.md) | Skill (`/find-funding`) for low-friction intake and verified funding discovery |
+| [`skills/funding-opportunity-verifier.md`](./skills/funding-opportunity-verifier.md) | Skill (`/verify-opportunity` / `/check-limited`) for solicitation analysis and FSU limited-submission checking |
+| [`skills/research-opportunity-matcher.md`](./skills/research-opportunity-matcher.md) | Skill (`/match-opportunity`) for qualitative project-to-grant fit evaluation |
+| [`skills/fsu-proposal-planner.md`](./skills/fsu-proposal-planner.md) | Skill (`/plan-proposal`) for 3-tier proposal checklists and backward-planned timelines |
+| [`skills/sponsor-aligned-proposal-outliner.md`](./skills/sponsor-aligned-proposal-outliner.md) | Skill (`/outline-proposal`) for sponsor-aligned outlines and review-criteria crosswalks |
 | [`example-input.md`](./example-input.md) | Self-contained *HeatReady Florida* solicitation test prompt + quick discovery test prompt |
 | [`example-output.md`](./example-output.md) | Worked Opportunity Brief, Limited-Submission Check, Fit Assessment, Checklist/Timeline, and Outline |
-| [`Knowledge files/`](./Knowledge%20files/) | Optional detailed FSU routing, rubric, template, and source-registry packets (see [`../Knowledge/README.md`](../Knowledge/README.md)) |
 
 ---
 
@@ -130,4 +129,4 @@ In **5. Starter Prompts**, click **Add Starter Prompt** and enter the **Title** 
 3. **Test a Limited-Submission Blocker (`/verify-opportunity`)**:
    - *Try this*: Paste a foundation solicitation with a *"one application per university"* cap and note that no FSU listing was found. Watch how the Verifier flags the institutional limit first and directs you to **FSU Research Development** (`limitedsubmissions@fsu.edu`).
 4. **Customize Departmental Routing via Knowledge Files**:
-   - *Try this*: Upload your college's internal pre-award review checklist in **Step 3 (Knowledge & Tools)** and ask `/plan-proposal` to include your college's internal review milestone alongside the sponsor requirements.
+   - *Try this*: Upload the optional packets from [`../knowledge/`](../knowledge/README.md) or your college's internal pre-award review checklist in **Step 3 (Knowledge & Tools)** and ask `/plan-proposal` to include your college's internal review milestone alongside the sponsor requirements.

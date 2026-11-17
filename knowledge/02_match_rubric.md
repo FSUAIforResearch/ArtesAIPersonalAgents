@@ -1,7 +1,7 @@
 ---
 title: Grant Compass Compact Research Match Rubric
 purpose: Explain research-to-opportunity alignment consistently without predicting awards.
-source_basis: Grant-Compass-Agent/Knowledge files/02_match_rubric.md
+source_basis: knowledge/02_match_rubric.md
 status: Qualitative evaluation framework, not an eligibility or funding decision.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Grant Compass Compact Output Templates
 purpose: Make requirements, evidence, unknowns, and next steps easy to review.
-source_basis: Grant-Compass-Agent/Knowledge files/03_output_templates.md
+source_basis: knowledge/03_output_templates.md
 status: Response-format guidance; example fields are not factual requirements.
 ---
 
