@@ -1,125 +1,131 @@
 ---
 name: data-profile
-description: Inspect and explain CSV or Excel research data before analysis, including variables, missingness, identifiers, repeated records, linked sheets, formulas, and documented quality rules.
+description: Inspect and describe a CSV or Excel research dataset before analysis. Use to inventory tables and variables, calculate missingness, identify keys and duplicates, evaluate repeated-measures and hierarchical structures, check cross-sheet relationships, apply data-dictionary rules, and assess readiness without modifying the source data.
 ---
 
 # Data Profile
 
-## Purpose
+## Goal
 
-Inspect readable data before analysis and produce a factual, plain-language description of contents, structure, relationships, quality, and readiness. Use for CSV or Excel profiling, schema review, missingness, repeated records, linked sheets, formulas, and dictionary validation. Do not clean data, recommend analyses or visualizations, or make causal conclusions.
+Create a complete, exact, and evidence-based profile of a research dataset that can be used before analysis without guessing or silently changing the data.
 
-## Evidence rules
+## Required inputs
 
-Classify material findings as **Verified finding**, **Metadata-supported finding**, **Inferred interpretation**, or **Requires confirmation**. Stored data establish what is present; metadata establish intended definitions and rules; formulas and structure provide supporting evidence; names and patterns support cautious inference only.
+- A readable CSV file, Excel workbook, or schema
+- Optional data dictionary, codebook, or notes
+- Optional research question
+
+If the dataset cannot be read completely enough to support the requested assessment, stop and state what is unavailable.
 
 ## Procedure
 
-### 1. Confirm readability and scope
+1. Inventory every accessible worksheet, table, row, column, and variable.
+2. Report exact data-row and variable counts for each table.
+3. Identify source-data, metadata, dictionary, notes, and summary sheets.
+4. Classify each table’s structure and unit of observation.
+5. Profile every variable using its exact stored name.
+6. Calculate nonmissing count, missing count, missing percentage, unique count, range, or exact category frequencies as applicable.
+7. Distinguish numeric values, text, dates, timestamps, formulas, blanks, and mixed stored types.
+8. Identify candidate primary and composite keys and test their uniqueness.
+9. Separately quantify exact duplicate rows, repeated identifiers, repeated composite keys, and conflicting repeated keys.
+10. Detect repeated measures, longitudinal order, clustering, pairing, nesting, folds, replications, and hierarchical dependencies.
+11. Identify and test cross-sheet relationships and foreign keys.
+12. Count matched and unmatched records for each relationship.
+13. Apply documented types, categories, units, ranges, missingness rules, keys, and relationship requirements.
+14. Flag malformed types, invalid dates, range violations, inconsistent categories, inconsistent units, whitespace issues, conditional missingness problems, orphan records, high cardinality, imbalance, and unsupported structures.
+15. Reconcile all reported counts and denominators.
+16. Separate verified observations, documented rules, inferred roles, and unresolved questions.
+17. Assess readiness without altering the source data.
 
-Report readable inputs, exact sheet/table names, inaccessible elements, formula availability, metadata availability, and whether the full relevant population was inspected. Never imply a preview is complete without verification.
+## Duplicate terminology
 
-### 2. Inventory every relevant sheet or table
+Use these definitions consistently:
 
-Report exact dimensions, observation rows, variables, apparent purpose, apparent row grain, structural type, and whether the sheet contains data, metadata, calculations, instructions, or output. Separate headers, titles, notes, subtotals, blanks, and formatting-only rows from observations.
+- **Exact duplicate row:** all compared fields are identical.
+- **Repeated identifier:** an identifier occurs more than once.
+- **Repeated composite key:** the same key combination occurs more than once.
+- **Conflicting repeated key:** repeated keys contain different non-key values.
+- **Legitimate repeated measure:** an identifier repeats because observations occur at different documented occasions, conditions, or levels.
 
-### 3. Inspect formulas and summaries
+Report both:
 
-Identify formula-derived totals, counts, dates, fields, and summaries. Explain what they calculate, compare results with underlying data when possible, and flag errors or disagreements. Do not call verified formulas manually entered.
+- the number of affected key groups; and
+- the number of extra rows beyond the first occurrence.
 
-### 4. Profile every variable
+## Relationship terminology
 
-For every variable report exact sheet and name, stored type, likely semantic type and role, documented units, exact numeric range or exact stored categories, exact category frequencies when shown, distinct count when useful, missing count and percentage, metadata rule, evidence classification, and status.
+Classify relationships only after checking multiplicity on both sides:
 
-Preserve exact labels. Do not silently merge similar labels.
+- one-to-one;
+- one-to-many;
+- many-to-one;
+- many-to-many;
+- unresolved because a proposed parent key is not unique; or
+- unsupported by available evidence.
 
-### 5. Calculate missingness
+Report the exact linking fields and unmatched-row counts.
 
-Use the applicable observation population. Report count, denominator, and percentage. Distinguish blank cells from stored missing-like labels. A text value in a numeric field is a type inconsistency unless metadata define it as a missing code. For conditional missingness, evaluate the condition for every blank.
+## Evidence rules
 
-### 6. Reconcile categories
+Label information as:
 
-Count every distinct stored label, calculate exact frequencies, sum them, and confirm the total equals the nonmissing population. Never use approximate counts when complete data are readable. Label partial category previews explicitly.
+- **Observed:** directly calculated or read from the dataset.
+- **Documented:** explicitly stated in a dictionary or notes.
+- **Inferred:** a plausible role or interpretation not explicitly documented.
+- **Unresolved:** insufficient evidence is available.
 
-### 7. Report exact observed ranges
+Do not convert an inference into a fact.
 
-Calculate exact numeric minima and maxima separately from documented valid ranges. If a numeric field contains text or blanks, report the exact numeric range, nonnumeric values and keys, missing count, and validation rule. Do not call values invalid without a documented rule.
+## Output contract
 
-### 8. Assess identifiers and keys
+Return:
 
-Check uniqueness, missingness, format, exact duplicates, repeated keys, composite keys, and intentional sequences. A repeated identifier is not automatically a duplicate. Evaluate keys such as `Participant_ID + Visit`, `Student_ID + Week`, or `Sensor_ID + Timestamp`.
+- dataset_status
+- workbook_inventory
+- dimensions
+- table_grains
+- structure
+- variable_profiles
+- missingness_summary
+- identifiers_and_keys
+- duplicate_assessment
+- relationships_and_dependencies
+- referential_integrity
+- dictionary_rule_checks
+- existing_transformations
+- quality_flags
+- priority_issues
+- unsupported_features
+- verified_facts
+- documented_rules
+- inferred_roles
+- readiness_assessment
+- clarification_questions
 
-### 9. Verify duplicates
+## Validation
 
-Compare every stored field. If all match, report `verified exact duplicate records in the supplied data`. If the key repeats but fields differ, report `a repeated key with conflicting stored values` and identify differences. Never treat verification as permission to delete.
+Before responding, verify that:
 
-### 10. Assess repeated and dependent observations
+- every relevant sheet and variable is covered;
+- exact names and units are preserved;
+- missing counts reconcile with total row counts;
+- category counts reconcile with nonmissing counts;
+- duplicate terminology matches the evidence;
+- key-group counts and extra-row counts are distinguished;
+- relationship classifications match observed multiplicities;
+- unmatched-record counts are exact;
+- documented rules are separated from inferred expectations;
+- no unsupported cause or scientific conclusion is stated; and
+- no source data were modified.
 
-Look for repeated, paired, clustered, nested, longitudinal, multi-rater, or wide-to-long structures. Do not claim statistical independence or treatment effects. Distinguish internal balance from complete parent coverage.
+## Prohibited actions
 
-### 11. Describe repeated-measures coverage precisely
+Do not:
 
-Separate identifiers with expected records, expected sequence plus extras, incomplete sequences, malformed sequence fields, and child identifiers absent from the parent. An identifier with an extra duplicate still has repeated-measures structure. Label inferred schedules as inferred.
-
-### 12. Assess cross-sheet and hierarchical relationships
-
-For every hierarchy level identify parent, child, keys, cardinality, documentation status, and stored-type compatibility. Report keys present in both, parent only, child only, missing keys, duplicate parent keys, duplicate child composite keys, incompatible types, and formatting discrepancies.
-
-Never silently trim whitespace, change case, remove punctuation, restore zeros, or convert types before matching.
-
-### 13. Distinguish coverage from referential integrity
-
-Call a child-only key a documented referential-integrity violation only when metadata require parent membership. Call a parent-only key a documented violation only when complete child coverage is required; otherwise call it a verified parent-table coverage gap requiring clarification. Preserve exact formatting discrepancies and require confirmation before equivalence.
-
-### 14. Apply documented rules
-
-Check categories, numeric bounds, dates, ordering, required values, missingness, conditional missingness, uniqueness, relationships, units, cross-variable rules, and formats. Classify each finding precisely as documented violation, exact duplicate, conflicting repeated key, permitted value/missingness, coverage gap, referential-integrity violation, possible inconsistency, unusual but not documented invalid, unclear, or could not verify.
-
-### 15. Check units and cross-variable rules
-
-Verify documented relationships record by record, such as measurement type/unit, quality flag/missing reading, copied site assignment, or visit/date order. Report key, stored values, rule, and conformance. Do not convert or recode.
-
-### 16. Check dates and sequences
-
-Report exact readable date minima and maxima, malformed values, affected keys, chronology, parent-child date constraints, and elapsed time when relevant. Do not include unreadable text in date ranges or assume equal intervals from labels.
-
-### 17. Identify transformations and calculated fields
-
-Report filtering, aggregation, recoding, binning, standardization, normalization, calculated variables, totals, percentages, scores, date-derived fields, and formulas only when supported by formulas, documentation, labels, or verifiable relationships.
-
-### 18. Check grouping-variable alignment
-
-Report perfect alignment among comparison variables and explain that their separate relationships cannot be distinguished from the supplied data alone. Do not recommend a statistical remedy.
-
-### 19. Final consistency review
-
-Before responding, verify that counts use the right population, percentages use the right denominator, ranges are exact, category frequencies reconcile, dimensions agree, formulas agree with data, duplicate terminology is correct, repeated-measures counts distinguish extra records, parent-child counts reconcile, permitted missingness is not called an error, conditional rules were evaluated, identifiers are preferred over row numbers, and every response section agrees. If a result cannot be verified, state `Could not verify`.
-
-## Required output
-
-### A. Quick Overview
-Readable inputs, inventory, exact dimensions, apparent purpose and grain, structural findings, formula-derived summaries, metadata, and consequential verified issues.
-
-### B. Variable Map
-Use:
-
-| Sheet | Variable | Stored Type | Likely Role | Units | Observed Values or Range | Missing | Metadata Rule | Status |
-|---|---|---|---|---|---|---|---|---|
-
-Use exact reconciled category counts and exact numeric ranges.
-
-### C. Structure and Dependencies
-Keys, duplicates, conflicting keys, repeated-measures coverage, clustering/nesting, hierarchy, cardinality, cross-sheet coverage, formatting discrepancies, alignment, formulas, and transformations.
-
-### D. Data-Quality Flags
-For each flag report sheet, field/key, meaningful identifier, exact value, rule, classification, significance, and confirmation requirement.
-
-### E. Questions Before Analysis
-Ask no more than three questions, preferably grouped into identifier/relationship resolution, duplicate resolution, and nonconforming value/format/type/unit/missingness resolution.
-
-### F. Readiness Assessment
-State what is interpretable, safe to describe/link, blocking, nonblocking, permitted missingness, restricted in usability, and unsupported.
-
-## Restrictions
-
-Do not modify, clean, standardize, normalize, delete, recode, convert units, impute, filter, or aggregate source data. Do not recommend tests, models, analytical methods, or visualizations. Do not make causal conclusions, infer study design or independence, invent metadata, estimate calculable values, call values outliers without rules, silently normalize identifiers, use approximate category counts or exact ranges, or present cleaning decisions as final.
+- modify, delete, recode, standardize, impute, filter, or aggregate source data;
+- silently trim identifiers or normalize categories;
+- recommend statistical tests, models, or visualizations;
+- make causal or scientific conclusions;
+- conceal uncertainty;
+- estimate values that can be calculated; or
+- claim complete coverage when only a preview or sample was inspected.
