@@ -11,9 +11,13 @@ Each folder in this repository contains everything you need to build a specializ
 
 > **New to System Prompts & Skills?** Read our quick guide: [**System Prompts vs. Skills: What's the Difference? (`docs/system-prompts-vs-skills.md`)**](./docs/system-prompts-vs-skills.md) to learn how they work together and when to put instructions in a System Prompt vs. a reusable Skill.
 
+> **What goes in an agent's knowledge?** Explore the [Grant Compass Knowledge Pack (`grant-compass-agent/knowledge/`)](./grant-compass-agent/knowledge/README.md) for upload-ready reference packets, what each contains, why the agent uses it, and how to add it in ArtesAI.
+
 ---
 
 ## Example Agents Catalog
+
+**Browse locally as a website:** Run `python website/serve.py` from this folder, then open [http://localhost:8000](http://localhost:8000). The site includes searchable agent guides, prompts, skills, examples, and source downloads. See the [local website instructions](./website/README.md).
 
 | Agent | Focus Area | Included Skills | Difficulty |
 | :--- | :--- | :--- | :--- |
@@ -23,7 +27,7 @@ Each folder in this repository contains everything you need to build a specializ
 | [**Research Paper Matchmaker**](./research-paper-matchmaker/README.md) | Academic & Research | • `project-paper-matcher`<br>• `project-paper-finder` | Beginner |
 | [**FSU Accessibility Reviewer**](./accessibility-reviewer/README.md) | Accessibility & Compliance | • `accessibility-standards`<br>• `document-review`<br>• `media-web-social` | Beginner |
 | [**Research-to-LaTeX Agent**](./research-to-latex/README.md) | Research Writing & LaTeX | • `markdown-to-latex-converter`<br>• `latex-template-drafter`<br>• `latex-draft-reviewer` | Beginner / Intermediate |
-
+| [**Grant Compass**](./grant-compass-agent/README.md) | Research Funding & Proposal Planning | • `funding-opportunity-finder`<br>• `funding-opportunity-verifier`<br>• `research-opportunity-matcher`<br>• `fsu-proposal-planner`<br>• `sponsor-aligned-proposal-outliner` | Beginner / Intermediate |
 ---
 
 ## Quick Start: How to Build an Agent & Its Skills in ArtesAI
