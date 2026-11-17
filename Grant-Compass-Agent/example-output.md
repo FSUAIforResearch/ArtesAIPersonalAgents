@@ -33,16 +33,20 @@ Illustrative response to [`example-input.md`](./example-input.md). All sponsor f
 
 **Tentative FSU internal deadline:** A precise FSU internal deadline could not be calculated from the available authoritative sources. Current controlling policy and closure information were not supplied; confirm timing with departmental grants staff and the responsible FSU office. Do not substitute a calendar-day subtraction.
 
-## Research-to-Opportunity Match
+## Research-to-Opportunity Match (`/match-opportunity`)
 
-**Possible fit.** The project aligns closely with the pilot's population, rural setting, community engagement, and heat-resilience purpose. The required partner commitment and institutional nomination remain unresolved. This classification describes alignment with the available information; it is not a funding prediction or final eligibility determination.
+- **Apparent Fit Classification**: **Possible fit (`Possible Match`)**
+- **Action Decision**: **Investigate Further** *(Resolve the institutional limited-submission nomination with FSU Research Development and secure the signed rural community partner letter before committing to full drafting).*
+  > *Note: This classification describes alignment with the available information; it is not a funding prediction or final eligibility determination.*
 
 - **Program alignment:** Older adults in rural North Florida and co-designed heat preparedness directly address packet A.
 - **Mechanism fit:** Feasibility and acceptability testing suit a pilot. Frame preliminary effects as exploratory; a definitive efficacy trial is outside scope (packet A).
 - **Budget and duration:** The $450,000 total-cost estimate and three-year duration reach the ceilings in packet C. Confirm that personnel, partners, participant compensation, sensors, and indirect costs all fit inside that total. No institutional rates are supplied.
 - **Team and eligibility:** The supplied faculty appointment appears consistent with the PI condition. Confirm the applicant's eligibility, the PI's application count, and FSU's selection process; no final eligibility decision is made here.
 - **Evidence readiness:** Twelve exploratory interviews are supplied project facts. No interview findings, sensor results, or intervention effects were supplied. Packet D sets no preliminary-data threshold.
-- **Review development:** Strengthen partner responsibilities, sensor-subset selection, pilot analysis, feasibility measures, and the route to a larger study. These are recommendations, not additional sponsor requirements.
+- **Framing Opportunities vs. Substantive Project Gaps:**
+  - *Framing Opportunity*: Explicitly frame Aim 3's "preliminary effects" as exploratory pilot feasibility/acceptability estimation rather than an efficacy trial (which Section A excludes).
+  - *Substantive Project Gaps*: (1) Converting at least one rural community organization's expression of interest into a formal partner role with a signed commitment letter, and (2) defining the sensor-subset selection protocol, feasibility thresholds, and data protection summary.
 
 ## Limited-Submission Check
 

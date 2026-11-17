@@ -1,13 +1,19 @@
 # Example Input: Grant Compass
 
-This self-contained test adapts the existing HeatReady Florida research scenario. The sponsor, opportunity, dates, requirements, and excerpt below are **fictional training material**, not a real funding announcement or FSU policy. Attach the Verifier, Matcher, Limited Submission Checker, Planner, and Outliner for the combined workflow.
+Below are two self-contained prompts to test **Grant Compass**:
+- **Example A (End-to-End Solicitation Verification, Fit, Planning & Outlining)**: Tests `funding-opportunity-verifier`, `research-opportunity-matcher`, `fsu-proposal-planner`, and `sponsor-aligned-proposal-outliner` on a self-contained training solicitation (*HeatReady Florida*) without needing live web search.
+- **Example B (Live Funding Discovery)**: Tests `funding-opportunity-finder` (`/find-funding`) using a short, 2-sentence faculty research description.
 
-Copy the entire block into the agent chat:
+---
+
+## Example A: Solicitation Verification, Limited-Submission Check, Fit, Plan & Outline
+
+Attach `funding-opportunity-verifier`, `research-opportunity-matcher`, `fsu-proposal-planner`, and `sponsor-aligned-proposal-outliner`, then copy and paste the block below into the agent chat:
 
 ```text
 Please analyze the fictional opportunity below for my HeatReady Florida project. Work only from this supplied training packet; do not browse, search for other funding, or claim live verification. Treat the fictional sponsor requirements as exercise facts, not real requirements. Identify the source by packet section; no official URL exists.
 
-Produce an opportunity brief, qualitative fit assessment, limited-submission check, proposal checklist and relative timeline, and sponsor-aligned outline with a review-criteria crosswalk. Put blockers first, distinguish sponsor requirements from FSU requirements and recommendations, and finish with three next actions. Do not calculate a precise FSU internal date: no current FSU policy or closure calendar is supplied.
+Run /verify-opportunity (including the FSU limited-submission check), /match-opportunity, /plan-proposal, and /outline-proposal to produce an opportunity brief, qualitative fit assessment with framing vs. substantive gaps and a Pursue/Investigate Further/Monitor/Do Not Pursue decision, proposal checklist and relative timeline, and sponsor-aligned outline with a review-criteria crosswalk. Put blockers first, distinguish sponsor requirements from FSU requirements and recommendations, and finish with three next actions. Do not calculate a precise FSU internal date: no current FSU policy or closure calendar is supplied.
 
 PROJECT CONCEPT — supplied researcher facts
 I am an assistant professor at Florida State University studying community resilience and environmental health. FSU would be the lead applicant for HeatReady Florida: Protecting Older Adults from Extreme Heat in Rural Communities.
@@ -56,4 +62,14 @@ Dissemination and community benefit: 15%.
 
 Section F — Submission
 Submit narrative and attachments through the fictional foundation portal. Submission must be made by an authorized institutional representative. This packet does not specify portal registration requirements or file naming rules.
+```
+
+---
+
+## Example B: Live Funding Discovery (`/find-funding`)
+
+To test live web discovery, ensure **Web Search** is turned **ON**, attach `funding-opportunity-finder`, and paste:
+
+```text
+/find-funding I study pufferfish toxicology, particularly how environmental conditions affect toxin production. I am looking for funding to support genomic sequencing, laboratory supplies, animal care, and a graduate research assistant.
 ```

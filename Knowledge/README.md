@@ -8,7 +8,7 @@
 
 ## Overview
 
-Knowledge supplies the reference material an agent consults while working. Grant Compass uses it to understand FSU routing, compare projects consistently, organize results, and distinguish authoritative evidence from discovery leads. The system prompt defines its role; the six companion skills define its workflows; these files provide the reusable context those workflows need.
+Knowledge supplies the reference material an agent consults while working. Grant Compass uses it to understand FSU routing, compare projects consistently, organize results, and distinguish authoritative evidence from discovery leads. The system prompt defines its role; the five companion skills define its workflows; these files provide optional reusable context those workflows can consult.
 
 This folder provides a compact example pack adapted from the existing [detailed Grant Compass knowledge packets](../Grant-Compass-Agent/Knowledge%20files/). It follows the other examples' setup, file-purpose, sample-use, and customization format. It adds no new verified policy, deadline, rate, or source approval.
 
