@@ -11,6 +11,8 @@ Each folder in this repository contains everything you need to build a specializ
 
 > **New to System Prompts & Skills?** Read our quick guide: [**System Prompts vs. Skills: What's the Difference? (`docs/system-prompts-vs-skills.md`)**](./docs/system-prompts-vs-skills.md) to learn how they work together and when to put instructions in a System Prompt vs. a reusable Skill.
 
+> **What goes in an agent's knowledge?** Explore the [Grant Compass Knowledge Pack (`grant-compass-agent/knowledge/`)](./grant-compass-agent/knowledge/README.md) for upload-ready reference packets, what each contains, why the agent uses it, and how to add it in ArtesAI.
+
 ---
 
 ## Example Agents Catalog
@@ -21,8 +23,10 @@ Each folder in this repository contains everything you need to build a specializ
 | [**Scientific Figure Recreator**](./scientific-figure-recreator/README.md) | Data Visualization & Plotting | • `figure-recreator-python`<br>• `figure-recreator-r`<br>• `figure-recreator-stata`<br>• `figure-recreator-matlab` | Beginner / Intermediate |
 | [**Syllabus & Rubric Builder**](./syllabus-rubric-builder/README.md) | Teaching & Course Design | • `blooms-learning-objectives-generator`<br>• `course-ai-policy-drafter`<br>• `assignment-rubric-builder`<br>• `course-schedule-builder` | Beginner |
 | [**Research Paper Matchmaker**](./research-paper-matchmaker/README.md) | Academic & Research | • `project-paper-matcher`<br>• `project-paper-finder` | Beginner |
+| [**FSU Accessibility Reviewer**](./accessibility-reviewer/README.md) | Accessibility & Compliance | • `accessibility-standards`<br>• `document-review`<br>• `media-web-social` | Beginner |
+| [**Research-to-LaTeX Agent**](./research-to-latex/README.md) | Research Writing & LaTeX | • `markdown-to-latex-converter`<br>• `latex-template-drafter`<br>• `latex-draft-reviewer` | Beginner / Intermediate |
+| [**Grant Compass**](./grant-compass-agent/README.md) | Research Funding & Proposal Planning | • `funding-opportunity-finder`<br>• `funding-opportunity-verifier`<br>• `research-opportunity-matcher`<br>• `fsu-proposal-planner`<br>• `sponsor-aligned-proposal-outliner` | Beginner / Intermediate |
 | [**Research Data First Look**](./research-data-first-look/README.md) | Research Data & Quality Auditing | • `variable-and-missingness-profiler`<br>• `keys-and-relationships-checker`<br>• `rules-and-readiness-auditor` | Beginner / Intermediate |
-
 ---
 
 ## Quick Start: How to Build an Agent & Its Skills in ArtesAI
