@@ -22,6 +22,7 @@ Each folder in this repository contains everything you need to build a specializ
 | [**Syllabus & Rubric Builder**](./syllabus-rubric-builder/README.md) | Teaching & Course Design | • `blooms-learning-objectives-generator`<br>• `course-ai-policy-drafter`<br>• `assignment-rubric-builder`<br>• `course-schedule-builder` | Beginner |
 | [**Research Paper Matchmaker**](./research-paper-matchmaker/README.md) | Academic & Research | • `project-paper-matcher`<br>• `project-paper-finder` | Beginner |
 | [**FSU Accessibility Reviewer**](./accessibility-reviewer/README.md) | Accessibility & Compliance | • `accessibility-standards`<br>• `document-review`<br>• `media-web-social` | Beginner |
+| [**Research-to-LaTeX Agent**](./research-to-latex/README.md) | Research Writing & LaTeX | • `markdown-to-latex-converter`<br>• `latex-template-drafter`<br>• `latex-draft-reviewer` | Beginner / Intermediate |
 
 ---
 
