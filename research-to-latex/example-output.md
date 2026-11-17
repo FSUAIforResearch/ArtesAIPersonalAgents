@@ -1,111 +1,126 @@
 # Example Output: Research-to-LaTeX Agent
 
-This is an illustrative response authored for the repository from the fictional input in [example-input.md](./example-input.md). It is not a captured ArtesAI run. The LaTeX below is also available as [main.tex](./main.tex). It has not been compiled here; no LaTeX compiler was available.
+Below is an example of what your ArtesAI **Research-to-LaTeX Agent** will generate when given the prompt in [`example-input.md`](./example-input.md):
 
-A real response may use different wording or section choices. Check that it preserves the supplied measurements, equation, code, missing information, and limits on interpretation.
-
+Output generated on 2026/11/16 with ArtesAI using model gpt-5.6-luna.
 ---
 
 ## Proposed Structure
 
-The report uses Objective, Methods, Results (with the reported equation and code excerpt), Discussion, Limitations, and Missing Materials sections. The fictional status appears at the beginning. No unsupported abstract, literature review, figure, or bibliography has been added.
+1. Title and abstract  
+2. Objective  
+3. Methods  
+4. Results, including the supplied table  
+5. Reported equation  
+6. Code excerpt  
+7. Discussion  
+8. Limitations  
 
-## LaTeX Draft
+The missing author information, citation, and workflow diagram are marked as TODOs rather than being invented.
+
+## Complete LaTeX Source
 
 ```latex
 \documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{listings}
+\usepackage{geometry}
+
+\geometry{margin=1in}
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  frame=single,
+  breaklines=true
+}
 
 \title{Comparing Two Document Conversion Workflows}
-% TODO: Add author name and institutional affiliation.
+
+% TODO: Supply the author name and affiliation.
 \author{}
-% TODO: Add the report date if required.
 \date{}
 
 \begin{document}
+
 \maketitle
 
-\noindent\textbf{Status:} Fictional demonstration report; not real research findings.
+\begin{abstract}
+This pilot compares the time required to prepare editable LaTeX drafts from Markdown notes using Workflow A and Workflow B. Each workflow was applied once to each of six sample reports. Workflow B had a lower reported mean preparation time in this pilot, but no significance tests, confidence intervals, or effect sizes were computed.
+\end{abstract}
 
 \section{Objective}
-Compare the time required to prepare editable LaTeX drafts from Markdown
-notes using Workflow A and Workflow B.
+
+The objective was to compare the time required to prepare editable LaTeX drafts from Markdown notes using Workflow A and Workflow B.
 
 \section{Methods}
-Each workflow was applied to the same 6 fictional Markdown reports. Each
-report contained one table and one equation. Each workflow was run once
-per report. Preparation time included manual correction of the generated
-LaTeX. Hardware and software versions were not recorded.
-% TODO: Add hardware and software details if available.
+
+Each workflow was applied to the same 6 sample Markdown reports. Each report contained one table and one equation. Each workflow was run once per report. Preparation time included manual correction of the generated LaTeX. Hardware and software versions were not recorded.
 
 \section{Results}
-Table~\ref{tab:workflow-results} presents the values supplied by the report
-author.
+
+The recorded values are shown in Table~\ref{tab:results}.
 
 \begin{table}[htbp]
-\centering
-\caption{Reported results for the fictional document conversion demonstration.}
-\label{tab:workflow-results}
-\begin{tabular}{lrrr}
-\toprule
-Workflow & Reports & Mean preparation & Reports requiring \\
-         & processed & time (min) & manual correction \\
-\midrule
-A & 6 & 18.5 & 4 \\
-B & 6 & 12.0 & 2 \\
-\bottomrule
-\end{tabular}
+  \centering
+  \caption{Preparation-time and manual-correction results.}
+  \label{tab:results}
+  \begin{tabular}{lrrr}
+    \toprule
+    Workflow & Reports processed & Mean preparation time (min) & Reports requiring manual correction \\
+    \midrule
+    A & 6 & 18.5 & 4 \\
+    B & 6 & 12.0 & 2 \\
+    \bottomrule
+  \end{tabular}
 \end{table}
 
 \subsection{Reported Equation}
+
 Mean preparation time was defined as
 \begin{equation}
-\bar{t} = \frac{1}{n}\sum_{i=1}^{n} t_i
-\label{eq:mean-time}
+  \bar{t} = \frac{1}{n}\sum_{i=1}^{n} t_i.
+  \label{eq:mean-time}
 \end{equation}
-where \(t_i\) is preparation time for report \(i\), measured in minutes,
-and \(n\) is the number of reports.
+
+Here, $t_i$ is preparation time for report $i$, measured in minutes, and $n$ is the number of reports.
 
 \subsection{Code Excerpt}
-This Python excerpt labels the two workflows; it does not perform analysis.
-\begin{lstlisting}[language=Python,breaklines=true,basicstyle=\ttfamily\small]
+
+This Python excerpt labels the two workflows; it does not perform analysis:
+
+\begin{lstlisting}
 workflow_labels = ["A", "B"]
 print("Workflow labels:", workflow_labels)
 \end{lstlisting}
 
 \section{Discussion}
-Workflow B had a lower reported mean preparation time in this demonstration.
-No significance tests, confidence intervals, or effect sizes were computed.
-These observations do not establish a general performance advantage.
 
-% TODO: Supply a source for the following background statement.
-Structured authoring workflows can support reproducible document preparation.
-\textbf{[Citation needed; no source supplied.]}
+Workflow B had a lower reported mean preparation time in this pilot. No significance tests, confidence intervals, or effect sizes were computed. These observations do not establish a general performance advantage.
+
+Structured authoring workflows can support reproducible document preparation \cite{TODO}.
+
+% TODO: A workflow diagram was mentioned in the planning notes, but no figure file was supplied. Do not add a figure until the file is provided.
 
 \section{Limitations}
-Only 6 fictional reports were included. Each workflow was run once per
-report. Hardware and software versions were not recorded. Manual
-corrections were included in preparation time but were not categorized
-by error type.
 
-\section{Missing Materials}
-Author name and affiliation were not supplied. A workflow diagram was
-mentioned in the planning notes, but no figure file was supplied. No
-bibliography was supplied.
-% TODO: Add the workflow diagram only when a figure file is supplied.
-% TODO: Add references only when bibliographic information is supplied.
+Only 6 reports were included. Each workflow was run once per report. Hardware and software versions were not recorded. Manual corrections were included in preparation time but were not categorized by error type.
 
 \end{document}
 ```
 
 ## Researcher Checklist
 
-- Add the author name, affiliation, and report date if required; do not guess them.
-- Add hardware and software details only if they become available.
-- Supply a real source for the background statement marked as needing a citation. No bibliographic entry has been invented.
-- Supply the workflow diagram before inserting a figure or referencing its file.
-- Preserve the limitation that no significance tests, confidence intervals, or effect sizes were computed. Do not infer a general performance advantage from this demonstration.
-- Keep the fictional status visible. The numbers are demonstration material and must not be presented as real findings.
-- Compile `main.tex` in Overleaf using pdfLaTeX, rerun for cross-references, and inspect any errors, warnings, or table overflow. This response does not claim successful compilation.
+- Supply the author name and affiliation.
+- Replace `\cite{TODO}` with a real citation after a source is identified.
+- Add a bibliography only after the corresponding bibliographic data is supplied.
+- Provide the workflow diagram file if it should appear in the report.
+- Confirm that the exact installed Python and LaTeX environments support the intended compilation workflow.
+- Compile with pdfLaTeX and verify table layout, code formatting, and equation rendering.
