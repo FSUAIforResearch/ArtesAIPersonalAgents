@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Turns spreadsheet headers, a few sample rows, or data-cleaning decisions into reproducible **Python (`pandas`) or R (`tidyverse`) cleaning scripts** and **FAIR-compliant Data Dictionaries (codebooks)** ready for OSF, Zenodo, Dryad, or FSU DigiNole.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

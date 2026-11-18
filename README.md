@@ -11,7 +11,7 @@ Each folder in this repository contains everything you need to build a specializ
 
 > **New to System Prompts & Skills?** Read our quick guide: [**System Prompts vs. Skills: What's the Difference? (`docs/system-prompts-vs-skills.md`)**](./docs/system-prompts-vs-skills.md) to learn how they work together and when to put instructions in a System Prompt vs. a reusable Skill.
 
-> **What goes in an agent's knowledge?** Explore the [Grant Compass Knowledge Pack (`grant-compass-agent/knowledge/`)](./grant-compass-agent/knowledge/README.md) for upload-ready reference packets, what each contains, why the agent uses it, and how to add it in ArtesAI.
+> **What goes in an agent's knowledge?** Explore the [Grant Compass Knowledge Pack (`agents/grant-compass-agent/knowledge/`)](./agents/grant-compass-agent/knowledge/README.md) for upload-ready reference packets, what each contains, why the agent uses it, and how to add it in ArtesAI.
 
 ---
 
@@ -21,23 +21,23 @@ Each folder in this repository contains everything you need to build a specializ
 
 | Agent | What It Does |
 | :--- | :--- |
-| [**Abstract Synthesizer**](./abstract-synthesizer/README.md) | Turns collections of paper abstracts, reading notes, or PDF excerpts into structured synthesis narratives, methodology comparison tables, and research gap analyses without inventing citations. |
-| [**Research Paper Matchmaker**](./research-paper-matchmaker/README.md) | Connects research papers to your specific project in plain language, explaining what each paper offers, what does not apply, and how they rank—or finds relevant real papers with links. |
-| [**Grant Compass**](./grant-compass-agent/README.md) | Helps FSU faculty and research staff discover and verify funding opportunities (including FSU limited-submission checks), evaluate project-to-sponsor fit, and build proposal checklists, timelines, and sponsor-aligned outlines. |
-| [**Grant & Abstract Coach**](./grant-abstract-coach/README.md) | Coaches and advises researchers on their draft NSF 1-Page Project Summaries and NIH SF424 Summary/Narrative/Aims documents, simulates reviewer panel critiques, and guides Broader Impacts planning without ghostwriting text. |
-| [**Research Data First Look**](./research-data-first-look/README.md) | Inspects uploaded CSV files and multi-sheet Excel workbooks before analysis to produce an exact, non-destructive audit of variables, missingness, keys, cross-sheet joins, codebook rules, and analysis readiness. |
-| [**Research Data Wrangler**](./research-data-wrangler/README.md) | Turns column headers, a few sample rows, or data-cleaning decisions into reproducible R (`tidyverse`) or Python (`pandas`) cleaning scripts and FAIR-compliant Data Dictionaries (codebooks). |
-| [**Scientific Figure Recreator**](./scientific-figure-recreator/README.md) | Inspects an uploaded scientific figure or plot screenshot and generates self-contained, publication-styled code in Python, R (`ggplot2`), Stata, or MATLAB using synthetic data. |
-| [**Research Code Explainer & Refactorer**](./code-explainer-refactorer/README.md) | Decodes undocumented legacy lab scripts (Python, R, MATLAB, Bash), flags silent scientific bugs, and prepares laptop scripts to run on FSU's Research Computing Center (RCC) SLURM cluster. |
-| [**Research-to-LaTeX Agent**](./research-to-latex/README.md) | Converts research notes, Markdown reports, tables, equations, or draft documents into clean, compile-ready LaTeX source code or user-provided `.tex` templates without inventing results or references. |
-| [**Lab Onboarding Assistant**](./lab-onboarding-agent/README.md) | Helps new undergraduate and graduate researchers get oriented in a lab by answering documentation-grounded questions about projects, contacts, tools, first-week checklists, and data-handling policies. |
+| [**Abstract Synthesizer**](./agents/abstract-synthesizer/README.md) | Turns collections of paper abstracts, reading notes, or PDF excerpts into structured synthesis narratives, methodology comparison tables, and research gap analyses without inventing citations. |
+| [**Research Paper Matchmaker**](./agents/research-paper-matchmaker/README.md) | Connects research papers to your specific project in plain language, explaining what each paper offers, what does not apply, and how they rank—or finds relevant real papers with links. |
+| [**Grant Compass**](./agents/grant-compass-agent/README.md) | Helps FSU faculty and research staff discover and verify funding opportunities (including FSU limited-submission checks), evaluate project-to-sponsor fit, and build proposal checklists, timelines, and sponsor-aligned outlines. |
+| [**Grant & Abstract Coach**](./agents/grant-abstract-coach/README.md) | Coaches and advises researchers on their draft NSF 1-Page Project Summaries and NIH SF424 Summary/Narrative/Aims documents, simulates reviewer panel critiques, and guides Broader Impacts planning without ghostwriting text. |
+| [**Research Data First Look**](./agents/research-data-first-look/README.md) | Inspects uploaded CSV files and multi-sheet Excel workbooks before analysis to produce an exact, non-destructive audit of variables, missingness, keys, cross-sheet joins, codebook rules, and analysis readiness. |
+| [**Research Data Wrangler**](./agents/research-data-wrangler/README.md) | Turns column headers, a few sample rows, or data-cleaning decisions into reproducible R (`tidyverse`) or Python (`pandas`) cleaning scripts and FAIR-compliant Data Dictionaries (codebooks). |
+| [**Scientific Figure Recreator**](./agents/scientific-figure-recreator/README.md) | Inspects an uploaded scientific figure or plot screenshot and generates self-contained, publication-styled code in Python, R (`ggplot2`), Stata, or MATLAB using synthetic data. |
+| [**Research Code Explainer & Refactorer**](./agents/code-explainer-refactorer/README.md) | Decodes undocumented legacy lab scripts (Python, R, MATLAB, Bash), flags silent scientific bugs, and prepares laptop scripts to run on FSU's Research Computing Center (RCC) SLURM cluster. |
+| [**Research-to-LaTeX Agent**](./agents/research-to-latex/README.md) | Converts research notes, Markdown reports, tables, equations, or draft documents into clean, compile-ready LaTeX source code or user-provided `.tex` templates without inventing results or references. |
+| [**Lab Onboarding Assistant**](./agents/lab-onboarding-agent/README.md) | Helps new undergraduate and graduate researchers get oriented in a lab by answering documentation-grounded questions about projects, contacts, tools, first-week checklists, and data-handling policies. |
 
 ### Teaching
 
 | Agent | What It Does |
 | :--- | :--- |
-| [**Syllabus & Rubric Builder**](./syllabus-rubric-builder/README.md) | Turns rough course notes into an FSU Simple Syllabus draft, measurable Bloom's Taxonomy learning objectives, an `ai.fsu.edu` Traffic-Light AI policy, analytic grading rubrics, and a 16-week schedule. |
-| [**FSU Accessibility Reviewer**](./accessibility-reviewer/README.md) | Reviews uploaded course syllabi, documents, slides, flyers, web/Canvas pages, and caption files for accessibility under WCAG 2.1 AA, ADA Title II, and FSU guidelines, returning a rating (`Good` to `Very Bad`) and app-specific fixes. |
+| [**Syllabus & Rubric Builder**](./agents/syllabus-rubric-builder/README.md) | Turns rough course notes into an FSU Simple Syllabus draft, measurable Bloom's Taxonomy learning objectives, an `ai.fsu.edu` Traffic-Light AI policy, analytic grading rubrics, and a 16-week schedule. |
+| [**FSU Accessibility Reviewer**](./agents/accessibility-reviewer/README.md) | Reviews uploaded course syllabi, documents, slides, flyers, web/Canvas pages, and caption files for accessibility under WCAG 2.1 AA, ADA Title II, and FSU guidelines, returning a rating (`Good` to `Very Bad`) and app-specific fixes. |
 
 ---
 
@@ -104,7 +104,7 @@ In step **4. Capabilities & Model**, ArtesAI lets you toggle four features and p
 ## Adding Your Own Agent Example
 
 Want to share an agent you built for your FSU course, lab, or office?
-1. Duplicate the [`_agent-template`](./_agent-template/README.md) folder and rename it in lowercase `kebab-case` (e.g., `your-agent-name`).
+1. Duplicate the [`_agent-template`](./agents/_agent-template/README.md) folder inside [`agents/`](./agents/) and rename it in lowercase `kebab-case` (e.g., `agents/your-agent-name`).
 2. Fill in `system-prompt.md`, add your `skills/`, and include a realistic `example-input.md` and `example-output.md`.
 3. Add a link to your new folder in the **Example Agents Catalog** table above.
 4. Read our [**Contributing Guidelines (`CONTRIBUTING.md`)**](./CONTRIBUTING.md) for the full folder layout, skill description character limits (`< 300` chars), and Pull Request checklist!

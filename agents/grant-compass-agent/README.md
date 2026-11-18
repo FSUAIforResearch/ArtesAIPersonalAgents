@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Helps FSU faculty and research staff discover and verify funding opportunities (including FSU limited-submission checks), evaluate project-to-sponsor fit, and build proposal checklists, timelines, and sponsor-aligned outlines.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

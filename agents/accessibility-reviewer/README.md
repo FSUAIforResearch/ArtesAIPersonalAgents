@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Reviews uploaded documents, flyers, web pages, caption files, and social media posts for accessibility under WCAG 2.1 AA, ADA Title II, and FSU Digital Accessibility guidelines—returning a clear rating (`Good` to `Very Bad`) and step-by-step fixes.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Give the agent research notes, Markdown reports, assignment instructions, experimental results, or draft documents, and it converts them into a clean, editable LaTeX project or draft without inventing results or citations.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

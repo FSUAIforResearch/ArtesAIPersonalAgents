@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Helps undergraduate and graduate researchers get oriented in a new lab by answering documentation-grounded questions about projects, contacts, tools, onboarding steps, and data-handling rules.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

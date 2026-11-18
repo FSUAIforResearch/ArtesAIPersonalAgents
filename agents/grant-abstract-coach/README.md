@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Coaches and advises FSU researchers on their draft grant abstracts—auditing against **NSF 1-Page Project Summary** (`Overview`, `Intellectual Merit`, `Broader Impacts`) and **NIH SF424** (`Project Summary/Abstract`, `Project Narrative`, `Specific Aims`) requirements, simulating reviewer panel critiques, and guiding Broader Impacts planning **without ghostwriting the researcher's text**.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Takes a screenshot or image of a figure from a research paper and generates a complete, self-contained script (with realistic synthetic data) to reproduce that exact figure style on your local computer in **Python**, **R**, **Stata**, or **MATLAB**.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

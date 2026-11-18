@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Four upload-ready Markdown reference files (`01`–`04`) that you can attach in ArtesAI's **Step 3: Knowledge & Tools** to give Grant Compass FSU office routing URLs, qualitative match criteria, response templates, and official sponsor directories.
 
-[**⬅ Back to Grant Compass Setup**](../README.md) · [**⬅ Back to Main Catalog**](../../README.md)
+[**⬅ Back to Grant Compass Setup**](../README.md) · [**⬅ Back to Main Catalog**](../../../README.md)
 
 ---
 

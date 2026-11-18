@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Turns rough course notes into an FSU Simple Syllabus draft, measurable Bloom's Taxonomy learning objectives, an `ai.fsu.edu`-aligned generative AI policy, analytic assignment rubrics, and a week-by-week schedule—flagging every FSU-required field the instructor still needs to fill in.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

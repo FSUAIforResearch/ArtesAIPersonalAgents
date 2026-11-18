@@ -13,16 +13,16 @@ Thank you for contributing to the **FSU ArtesAI Personal Agent Examples** reposi
 2. **Add a Companion Skill to an Existing Agent**:
    - Add a new `.md` file to an existing agent's `skills/` directory and document it in that agent's `README.md`.
 3. **Contribute a New Personal Agent Blueprint**:
-   - Duplicate the [`_agent-template/`](./_agent-template/README.md) directory and follow the structure and checklist below.
+   - Duplicate the [`agents/_agent-template/`](./agents/_agent-template/README.md) directory and follow the structure and checklist below.
 
 ---
 
 ## 2. Standard Directory & File Structure
 
-Every agent lives in its own **lowercase `kebab-case` folder** at the root of the repository (never inside `docs/`, and never with spaces or uppercase directory names):
+Every agent lives in its own **lowercase `kebab-case` folder** inside [`agents/`](./agents/) (never inside `docs/`, and never with spaces or uppercase directory names):
 
 ```text
-your-agent-name/
+agents/your-agent-name/
 ├── README.md                  # Step-by-step ArtesAI setup guide (Parts 1, 2, and 3)
 ├── system-prompt.md           # Copy-pasteable Specific Instructions (< 350 words)
 ├── example-input.md           # Self-contained sample prompt(s) wrapped in ```text blocks
@@ -53,8 +53,8 @@ Before opening a Pull Request, verify that your files follow these repository st
 - **Clean Markdown Body**: Below the second `---` line, include `# Skill Title`, `## When to Apply This Skill`, and `## Step-by-Step Instructions`. Do not include platform UI setup instructions inside the skill body.
 
 ### C. `README.md` (Agent Setup Guide)
-- Copy the exact section structure from [`_agent-template/README.md`](./_agent-template/README.md):
-  1. `# Agent Name`, `> **One-Sentence Summary**: ...`, and `[**⬅ Back to Main Catalog**](../README.md)`
+- Copy the exact section structure from [`agents/_agent-template/README.md`](./agents/_agent-template/README.md):
+  1. `# Agent Name`, `> **One-Sentence Summary**: ...`, and ``[**⬅ Back to Main Catalog**](../../README.md)``
   2. `## Overview` (2–3 sentences, `- **Recommended Model in ArtesAI**: OpenAI (gpt-5.6-luna) (Default) or Anthropic (claude-sonnet-5)`, and `- **Estimated Setup Time**: ~5 minutes`)
   3. `## How to Build This Agent & Its Skills in ArtesAI` (`Part 1: Create the Companion Skills First`, `Part 2: Create the Personal Agent` with steps `0`–`5`, and `Part 3: Test with Skills in the Preview Pane & Click Create`)
   4. `## Files in This Folder` (table with clickable relative links)
@@ -70,8 +70,8 @@ Before opening a Pull Request, verify that your files follow these repository st
 ## 4. How to Submit a Pull Request
 
 1. **Fork or Branch**: Create a new branch from `main` (e.g., `git checkout -b my-new-agent`).
-2. **Build Your Agent Folder**: Copy [`_agent-template/`](./_agent-template/README.md) to `your-agent-name/` and fill in all required files.
-3. **Update the Main Catalog**: Add a row for your agent under **`### Research`** or **`### Teaching`** in the root [`README.md`](./README.md#example-agents-catalog) with a link to `./your-agent-name/README.md` and a one-sentence summary.
+2. **Build Your Agent Folder**: Copy [`agents/_agent-template/`](./agents/_agent-template/README.md) to `agents/your-agent-name/` and fill in all required files.
+3. **Update the Main Catalog**: Add a row for your agent under **`### Research`** or **`### Teaching`** in the root [`README.md`](./README.md#example-agents-catalog) with a link to `./agents/your-agent-name/README.md` and a one-sentence summary.
 4. **Run the Pre-PR Checklist**:
    - [ ] Folder and all skill filenames are lowercase `kebab-case` (no `.DS_Store` or scratch files committed).
    - [ ] Every skill's YAML `description:` is `< 300` characters.

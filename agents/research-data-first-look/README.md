@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Inspects uploaded CSV files and multi-sheet Excel research workbooks before analysis to produce an exact, non-destructive audit of sheet structure, variables, missingness, primary/composite keys, cross-sheet joins, data-dictionary compliance, and analysis readiness.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

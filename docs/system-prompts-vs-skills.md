@@ -31,7 +31,7 @@ At first glance, both look like Markdown text files containing instructions for 
 
 ## 3. Concrete Examples from This Repository
 
-### Example A: The "One Agent, Multiple Languages" Pattern ([`Scientific Figure Recreator`](../scientific-figure-recreator/README.md))
+### Example A: The "One Agent, Multiple Languages" Pattern ([`Scientific Figure Recreator`](../agents/scientific-figure-recreator/README.md))
 - **What goes in `system-prompt.md`**:
   Instructions on how to visually inspect an uploaded figure image (identifying panel ratios, axes, error bars, and hex colors) and the rule that every script must generate seeded synthetic data with zero external file dependencies.
 - **What goes in `skills/`**:
@@ -39,7 +39,7 @@ At first glance, both look like Markdown text files containing instructions for 
 - **Why this separation works**:
   A Python researcher never needs their agent cluttered with Stata or MATLAB syntax rules, and an R user only attaches `figure-recreator-r`. Even better, you can attach `figure-recreator-r` in *other* chats whenever you want publication-styled `ggplot2` code!
 
-### Example B: The "Core Synthesizer + Specialized Deliverables" Pattern ([`Abstract Synthesizer`](../abstract-synthesizer/README.md))
+### Example B: The "Core Synthesizer + Specialized Deliverables" Pattern ([`Abstract Synthesizer`](../agents/abstract-synthesizer/README.md))
 - **What goes in `system-prompt.md`**:
   The academic research persona, the strict guardrail against hallucinating external citations or DOIs, and the default thematic synthesis narrative structure.
 - **What goes in `skills/`**:

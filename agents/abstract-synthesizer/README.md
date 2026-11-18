@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Turns collections of paper abstracts, reading notes, or PDF excerpts into structured synthesis narratives, comparison tables, and research gap analyses without inventing citations.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Connects research papers to your specific project in plain language, explaining what each paper offers, what does not apply, and how they rank, for faculty and students starting new research or reading outside their field.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

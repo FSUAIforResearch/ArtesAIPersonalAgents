@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Describe what this agent does and who at FSU (faculty, researchers, students, staff) benefits from it.
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 

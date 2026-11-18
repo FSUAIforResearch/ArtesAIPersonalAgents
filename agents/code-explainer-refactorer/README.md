@@ -2,7 +2,7 @@
 
 > **One-Sentence Summary**: Decodes undocumented "legacy lab scripts" (Python, R, MATLAB, Bash), flags silent scientific bugs, and prepares laptop scripts to run on HPC clusters like FSU's Research Computing Center (RCC).
 
-[**⬅ Back to Main Catalog**](../README.md)
+[**⬅ Back to Main Catalog**](../../README.md)
 
 ---
 
