@@ -17,20 +17,28 @@ Each folder in this repository contains everything you need to build a specializ
 
 ## Example Agents Catalog
 
-| Agent | Focus Area | Included Skills | Difficulty |
-| :--- | :--- | :--- | :--- |
-| [**Abstract Synthesizer**](./abstract-synthesizer/README.md) | Academic & Research | • `methodology-matrix-extractor`<br>• `research-gap-identifier` | Beginner |
-| [**Scientific Figure Recreator**](./scientific-figure-recreator/README.md) | Data Visualization & Plotting | • `figure-recreator-python`<br>• `figure-recreator-r`<br>• `figure-recreator-stata`<br>• `figure-recreator-matlab` | Beginner / Intermediate |
-| [**Syllabus & Rubric Builder**](./syllabus-rubric-builder/README.md) | Teaching & Course Design | • `blooms-learning-objectives-generator`<br>• `course-ai-policy-drafter`<br>• `assignment-rubric-builder`<br>• `course-schedule-builder` | Beginner |
-| [**Research Paper Matchmaker**](./research-paper-matchmaker/README.md) | Academic & Research | • `project-paper-matcher`<br>• `project-paper-finder` | Beginner |
-| [**FSU Accessibility Reviewer**](./accessibility-reviewer/README.md) | Accessibility & Compliance | • `accessibility-standards`<br>• `document-review`<br>• `media-web-social` | Beginner |
-| [**Research-to-LaTeX Agent**](./research-to-latex/README.md) | Research Writing & LaTeX | • `markdown-to-latex-converter`<br>• `latex-template-drafter`<br>• `latex-draft-reviewer` | Beginner / Intermediate |
-| [**Grant Compass**](./grant-compass-agent/README.md) | Research Funding & Proposal Planning | • `funding-opportunity-finder`<br>• `funding-opportunity-verifier`<br>• `research-opportunity-matcher`<br>• `fsu-proposal-planner`<br>• `sponsor-aligned-proposal-outliner` | Beginner / Intermediate |
-| [**Research Data First Look**](./research-data-first-look/README.md) | Data Profiling & Readiness Audit *(Full CSV/Excel Inspection)* | • `variable-and-missingness-profiler`<br>• `keys-and-relationships-checker`<br>• `rules-and-readiness-auditor` | Beginner / Intermediate |
-| [**Research Data Wrangler**](./research-data-wrangler/README.md) | Data Cleaning Code (`pandas`/`tidyverse`) & FAIR Codebooks | • `reproducible-cleaning-script-generator`<br>• `data-dictionary-codebook-builder` | Beginner / Intermediate |
-| [**Lab Onboarding Assistant**](./lab-onboarding-agent/README.md) | Research & Onboarding | • `onboarding-plan-builder` | Beginner |
-| [**Research Code Explainer & Refactorer**](./code-explainer-refactorer/README.md) | Scientific Coding & HPC (FSU RCC) | • `plain-english-walkthrough-bug-audit`<br>• `hpc-slurm-cluster-readiness` | Beginner / Intermediate |
-| [**Grant & Abstract Coach**](./grant-abstract-coach/README.md) | Grant Writing (NSF & NIH Coaching) | • `nsf-project-summary-coach`<br>• `nih-project-summary-coach`<br>• `broader-impacts-coach`<br>• `reviewer-critique-simulator` | Beginner |
+### Research
+
+| Agent | What It Does |
+| :--- | :--- |
+| [**Abstract Synthesizer**](./abstract-synthesizer/README.md) | Turns collections of paper abstracts, reading notes, or PDF excerpts into structured synthesis narratives, methodology comparison tables, and research gap analyses without inventing citations. |
+| [**Research Paper Matchmaker**](./research-paper-matchmaker/README.md) | Connects research papers to your specific project in plain language, explaining what each paper offers, what does not apply, and how they rank—or finds relevant real papers with links. |
+| [**Grant Compass**](./grant-compass-agent/README.md) | Helps FSU faculty and research staff discover and verify funding opportunities (including FSU limited-submission checks), evaluate project-to-sponsor fit, and build proposal checklists, timelines, and sponsor-aligned outlines. |
+| [**Grant & Abstract Coach**](./grant-abstract-coach/README.md) | Coaches and advises researchers on their draft NSF 1-Page Project Summaries and NIH SF424 Summary/Narrative/Aims documents, simulates reviewer panel critiques, and guides Broader Impacts planning without ghostwriting text. |
+| [**Research Data First Look**](./research-data-first-look/README.md) | Inspects uploaded CSV files and multi-sheet Excel workbooks before analysis to produce an exact, non-destructive audit of variables, missingness, keys, cross-sheet joins, codebook rules, and analysis readiness. |
+| [**Research Data Wrangler**](./research-data-wrangler/README.md) | Turns column headers, a few sample rows, or data-cleaning decisions into reproducible R (`tidyverse`) or Python (`pandas`) cleaning scripts and FAIR-compliant Data Dictionaries (codebooks). |
+| [**Scientific Figure Recreator**](./scientific-figure-recreator/README.md) | Inspects an uploaded scientific figure or plot screenshot and generates self-contained, publication-styled code in Python, R (`ggplot2`), Stata, or MATLAB using synthetic data. |
+| [**Research Code Explainer & Refactorer**](./code-explainer-refactorer/README.md) | Decodes undocumented legacy lab scripts (Python, R, MATLAB, Bash), flags silent scientific bugs, and prepares laptop scripts to run on FSU's Research Computing Center (RCC) SLURM cluster. |
+| [**Research-to-LaTeX Agent**](./research-to-latex/README.md) | Converts research notes, Markdown reports, tables, equations, or draft documents into clean, compile-ready LaTeX source code or user-provided `.tex` templates without inventing results or references. |
+| [**Lab Onboarding Assistant**](./lab-onboarding-agent/README.md) | Helps new undergraduate and graduate researchers get oriented in a lab by answering documentation-grounded questions about projects, contacts, tools, first-week checklists, and data-handling policies. |
+
+### Teaching
+
+| Agent | What It Does |
+| :--- | :--- |
+| [**Syllabus & Rubric Builder**](./syllabus-rubric-builder/README.md) | Turns rough course notes into an FSU Simple Syllabus draft, measurable Bloom's Taxonomy learning objectives, an `ai.fsu.edu` Traffic-Light AI policy, analytic grading rubrics, and a 16-week schedule. |
+| [**FSU Accessibility Reviewer**](./accessibility-reviewer/README.md) | Reviews uploaded course syllabi, documents, slides, flyers, web/Canvas pages, and caption files for accessibility under WCAG 2.1 AA, ADA Title II, and FSU guidelines, returning a rating (`Good` to `Very Bad`) and app-specific fixes. |
+
 ---
 
 ## Quick Start: How to Build an Agent & Its Skills in ArtesAI
