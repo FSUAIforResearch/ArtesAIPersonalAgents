@@ -12,6 +12,10 @@ Before running statistical models or merging multi-table datasets, researchers n
 
 **Research Data First Look** inspects your complete CSV or Excel workbook without altering, trimming, recoding, or imputing a single value. It reconciles exact counts across every sheet, separates true blanks from mixed-type text strings (like `"N/A"` or `"below detection"`), distinguishes exact duplicate rows from conflicting repeated keys, and produces a clear **Readiness Assessment** and list of **Questions Before Analysis**.
 
+> **How does this differ from [`Research Data Wrangler`](../research-data-wrangler/README.md)?**
+> - **Use `Research Data First Look` (Step 1 — Diagnose & Audit)**: Upload a **complete** CSV or multi-sheet Excel workbook to count exact missing/duplicate/orphan records across all rows, test cross-sheet joins, check against an existing codebook, and get a **Readiness Assessment** and **Questions Before Analysis** (no code generation).
+> - **Use [`Research Data Wrangler`](../research-data-wrangler/README.md) (Step 2 — Write Cleaning Code & Build a Codebook)**: Paste just your **column headers and 3–6 sample rows** (plus your answers to the cleaning questions) to generate a **Python (`pandas`) or R (`tidyverse`) cleaning script** (`/clean-script`) and a **new FAIR Data Dictionary (`README_DATA.md`)** (`/codebook`) for OSF, Zenodo, or FSU DigiNole.
+
 - **Recommended Model in ArtesAI**: `OpenAI (gpt-5.6-luna)` (Default, Reasoning Effort: `High`) or `Anthropic (claude-sonnet-5)` (Creativity: `Low`)
 - **Estimated Setup Time**: ~5 minutes
 
