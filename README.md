@@ -29,6 +29,7 @@ Each folder in this repository contains everything you need to build a specializ
 | [**Research Data First Look**](./research-data-first-look/README.md) | Research Data & Quality Auditing | • `variable-and-missingness-profiler`<br>• `keys-and-relationships-checker`<br>• `rules-and-readiness-auditor` | Beginner / Intermediate |
 | [**Lab Onboarding Assistant**](./lab-onboarding-agent/README.md) | Research & Onboarding | • `onboarding-plan-builder` | Beginner |
 | [**Research Code Explainer & Refactorer**](./code-explainer-refactorer/README.md) | Scientific Coding & HPC (FSU RCC) | • `plain-english-walkthrough-bug-audit`<br>• `hpc-slurm-cluster-readiness` | Beginner / Intermediate |
+| [**Grant & Abstract Coach**](./grant-abstract-coach/README.md) | Grant Writing (NSF & NIH Coaching) | • `nsf-project-summary-coach`<br>• `nih-project-summary-coach`<br>• `broader-impacts-coach`<br>• `reviewer-critique-simulator` | Beginner |
 ---
 
 ## Quick Start: How to Build an Agent & Its Skills in ArtesAI
