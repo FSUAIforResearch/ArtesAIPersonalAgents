@@ -27,6 +27,7 @@ Each folder in this repository contains everything you need to build a specializ
 | [**Research-to-LaTeX Agent**](./research-to-latex/README.md) | Research Writing & LaTeX | • `markdown-to-latex-converter`<br>• `latex-template-drafter`<br>• `latex-draft-reviewer` | Beginner / Intermediate |
 | [**Grant Compass**](./grant-compass-agent/README.md) | Research Funding & Proposal Planning | • `funding-opportunity-finder`<br>• `funding-opportunity-verifier`<br>• `research-opportunity-matcher`<br>• `fsu-proposal-planner`<br>• `sponsor-aligned-proposal-outliner` | Beginner / Intermediate |
 | [**Research Data First Look**](./research-data-first-look/README.md) | Research Data & Quality Auditing | • `variable-and-missingness-profiler`<br>• `keys-and-relationships-checker`<br>• `rules-and-readiness-auditor` | Beginner / Intermediate |
+| [**Lab Onboarding Assistant**](./lab-onboarding-agent/README.md) | Research & Onboarding | • `onboarding-plan-builder` | Beginner |
 ---
 
 ## Quick Start: How to Build an Agent & Its Skills in ArtesAI
