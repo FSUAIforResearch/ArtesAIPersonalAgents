@@ -2,16 +2,10 @@
 
 Welcome to the **FSU ArtesAI Personal Agent Examples** repository! This collection provides ready-to-use blueprints for building Personal Agents in Florida State University's **ArtesAI** platform.
 
-Each folder in this repository contains everything you need to build a specialized AI assistant in minutes:
-- **Step-by-step setup instructions** (`README.md`)
-- **A copy-pasteable System Prompt** (`system-prompt.md`)
-- **Modular Skills** (`skills/`) to copy into your ArtesAI account
-- **Sample Input & Output** (`example-input.md` and `example-output.md`) so you can test your agent right away
-- **"Modify & Play" ideas** to customize the agent for your own department, lab, or workflow
-
-> **New to System Prompts & Skills?** Read our quick guide: [**System Prompts vs. Skills: What's the Difference? (`docs/system-prompts-vs-skills.md`)**](./docs/system-prompts-vs-skills.md) to learn how they work together and when to put instructions in a System Prompt vs. a reusable Skill.
-
-> **What goes in an agent's knowledge?** Explore the [Grant Compass Knowledge Pack (`agents/grant-compass-agent/knowledge/`)](./agents/grant-compass-agent/knowledge/README.md) for upload-ready reference packets, what each contains, why the agent uses it, and how to add it in ArtesAI.
+### How to Get Started
+1. **Pick an Agent to Try**: Browse the **Research** and **Teaching** tables below and click on any agent that matches your workflow.
+2. **Copy-Paste into ArtesAI (~5 Minutes)**: Every agent's guide walks you through copying its **Companion Skills** (`skills/`), **System Prompt** (`system-prompt.md`), and optional **Knowledge** files into your ArtesAI account.
+3. **Test & Customize**: Run the ready-made sample prompt in `example-input.md` to see how the agent works, then use the **"Modify & Play"** ideas at the bottom of the guide to tailor it to your own lab, course, or department!
 
 ---
 
@@ -80,6 +74,7 @@ Every file in an agent's `skills/` folder is a **standard, platform-agnostic ski
 3. Hover over **`Skills >`** in the popup menu and click the skill(s) you created in Part 1 to attach them.
 4. Copy the sample prompt from `example-input.md` into the chat, verify the response against `example-output.md`, and click **Create** at the bottom to save your agent!
 
+
 ## Understanding "Capabilities & Model" (Step 4)
 
 In step **4. Capabilities & Model**, ArtesAI lets you toggle four features and pick a base model. Here is a quick guide to when to turn each toggle **On** or **Off**:
@@ -98,6 +93,10 @@ In step **4. Capabilities & Model**, ArtesAI lets you toggle four features and p
 - **Start Simple, Then Layer Skills**: Test the agent with just its `system-prompt.md` first, then add skills one at a time so you can see how each skill shapes the output.
 - **Attach Reference Files**: ArtesAI allows you to upload reference documents (such as your lab style guide, agency solicitation PDFs, or department syllabus templates) directly to your Personal Agent's knowledge base.
 - **Experiment with "Modify & Play"**: At the bottom of every agent's `README.md`, you'll find concrete ideas for tweaking tone, output formats, and domain rules.
+
+> **New to System Prompts & Skills?** Read our quick guide: [**System Prompts vs. Skills: What's the Difference? (`docs/system-prompts-vs-skills.md`)**](./docs/system-prompts-vs-skills.md) to learn how they work together and when to put instructions in a System Prompt vs. a reusable Skill.
+>
+> **What goes in an agent's knowledge?** Explore the [Grant Compass Knowledge Pack (`agents/grant-compass-agent/knowledge/`)](./agents/grant-compass-agent/knowledge/README.md) for upload-ready reference packets, what each contains, why the agent uses it, and how to add it in ArtesAI.
 
 ---
 
