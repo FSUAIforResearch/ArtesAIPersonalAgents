@@ -7,4 +7,4 @@
 - Every experiment must log the dataset version, code commit, configuration, and evaluation metrics.
 - Do not use test-set results to choose hyperparameters. The test set is for final evaluation.
 - Report suspected data exposure to Jordan immediately; do not attempt to hide or independently distribute affected data.
-- If an agent cannot find a requested policy in these documents, it should say the information is not documented and direct the student to Jordan rather than inventing an answer.
+- If a policy or procedure is not covered in these documents, ask Jordan Lee for confirmation before proceeding rather than guessing.
