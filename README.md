@@ -104,7 +104,22 @@ In step **4. Capabilities & Model**, ArtesAI lets you toggle four features and p
 ## Adding Your Own Agent Example
 
 Want to share an agent you built for your FSU course, lab, or office?
-1. Duplicate the [`_agent-template`](./_agent-template/README.md) folder and rename it (e.g., `your-agent-name`).
+1. Duplicate the [`_agent-template`](./_agent-template/README.md) folder and rename it in lowercase `kebab-case` (e.g., `your-agent-name`).
 2. Fill in `system-prompt.md`, add your `skills/`, and include a realistic `example-input.md` and `example-output.md`.
 3. Add a link to your new folder in the **Example Agents Catalog** table above.
+4. Read our [**Contributing Guidelines (`CONTRIBUTING.md`)**](./CONTRIBUTING.md) for the full folder layout, skill description character limits (`< 300` chars), and Pull Request checklist!
+
+---
+
+## Having Trouble? Submit an Issue (A Note on Scope)
+
+These examples are intended to be **customizable starting points and educational blueprints**—not turnkey, fully fledged software products. Because every research lab, academic discipline, and course has its own workflows and edge cases, you are encouraged to adapt the prompts, tweak the skills, and always verify outputs before relying on them for courses, publications, or grant submissions.
+
+If you run into trouble setting up an agent, notice outdated instructions as ArtesAI evolves, or find a prompt or skill that isn't behaving as expected, please [**open a GitHub Issue**](https://github.com/FSUAIforResearch/ArtesAIPersonalAgents/issues) with:
+- The **agent and skill name(s)** you were using
+- The **model** selected in ArtesAI
+- A brief description of what you expected vs. what happened
+
+If you have a refined version of one of these agents that you would like to share please consider submitting a pull request using our contributing guidelines!
+
 
