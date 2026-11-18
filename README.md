@@ -28,6 +28,7 @@ Each folder in this repository contains everything you need to build a specializ
 | [**Grant Compass**](./grant-compass-agent/README.md) | Research Funding & Proposal Planning | • `funding-opportunity-finder`<br>• `funding-opportunity-verifier`<br>• `research-opportunity-matcher`<br>• `fsu-proposal-planner`<br>• `sponsor-aligned-proposal-outliner` | Beginner / Intermediate |
 | [**Research Data First Look**](./research-data-first-look/README.md) | Research Data & Quality Auditing | • `variable-and-missingness-profiler`<br>• `keys-and-relationships-checker`<br>• `rules-and-readiness-auditor` | Beginner / Intermediate |
 | [**Lab Onboarding Assistant**](./lab-onboarding-agent/README.md) | Research & Onboarding | • `onboarding-plan-builder` | Beginner |
+| [**Research Code Explainer & Refactorer**](./code-explainer-refactorer/README.md) | Scientific Coding & HPC (FSU RCC) | • `plain-english-walkthrough-bug-audit`<br>• `hpc-slurm-cluster-readiness` | Beginner / Intermediate |
 ---
 
 ## Quick Start: How to Build an Agent & Its Skills in ArtesAI
